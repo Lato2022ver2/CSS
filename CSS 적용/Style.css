@@ -1,0 +1,3 @@
+/* css파일 끼리도 임폴트가 가능하다. */
+@import url('Common.css');
+span {color: yellow;}

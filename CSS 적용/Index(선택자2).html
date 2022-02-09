@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 특정 속성을 지닌 태그를 선택하는 방법 */
+        input[name="aaa"] {color: greenyellow;} /* 핀 포인트 적용 */
+
+        li[class*="col"] {color: yellow;} /* 한번에 적용할 내용 지정 */
+
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <input type="text" name="aaa" value="가">
+        <input type="text" name="aaa" value="나">
+        <input type="text" name="aaa" value="다">
+    </div>
+
+    <br>
+    <hr>
+
+    <div>
+        <ul>
+            <li class="col-1">List</li>
+            <li class="col-2">List</li>
+            <li class="col-3">List</li>
+            <li class="col-4">List</li>
+        </ul>
+    </div>
+
+    <br>
+    <hr>
+
+    <div>
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+    </div>
+
+
+</body>
+</html>

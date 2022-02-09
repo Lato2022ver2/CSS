@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 시트 우선 순위 : 인라인 > 내부 > 외부 -->
+
+    <!-- 내부 스타일 시트 -->
+    <style>
+        p {color: greenyellow;}
+    </style>
+
+    <!-- 외부 스타일 시트 -->
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+    
+    <p>내부 스타일 시트</p>
+
+    <!-- Style 파일을 별도로 생성하여 span 등 미리 색상을 정해두는 기능 -->
+    <span>외부 스타일 시트</span>
+
+    <p style="color: aqua;">인라인 시트</p>
+</body>
+</html>

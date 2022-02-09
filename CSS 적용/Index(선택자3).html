@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 가상 선택자 : 특별한 동작 상태일 때*/
+        /* ?:hover - 마우스가 닿을 때 적용되는 css */
+        .list > ul > li > a:hover {background-color: yellowgreen;}
+
+        /* ?:focus - 클릭시 지속 적용되는 효과 */
+        .inner > input:focus {border-color: blue;}
+
+        /* ?:active - 클릭한 부분을 순간 사각형 스타일로 색을 넣어 표시해주는 효과 */
+        .title:active {background-color: yellowgreen;}
+
+    </style>
+
+</head>
+<body>
+
+    <span class="title">Activ</span>
+    
+    <div class="list">
+        <ul>
+            <li><a href="#">List01</a></li>
+            <li><a href="#">List02</a></li>
+            <li><a href="#">List03</a></li>
+        </ul>
+    </div>
+
+    <div class="inner">
+        <input type="text">
+    </div>
+
+
+</body>
+</html>
