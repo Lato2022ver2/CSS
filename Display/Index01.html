@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .List01 div {display: inline;} /* Block -> Inline(옆으로) */
+
+        .List02 span,
+        .List02 strong,
+        .List02 small 
+        {
+            display: block; /* Inline -> Block(줄 바꿈) */
+        }
+
+        /* 사라지는 기능이며 잘 활용시 활성, 비활성이 가능 */
+        .box input {display: none;}
+
+        .List03 a 
+        {
+            /* Block은 wibth, height, 문단 정렬을 사용 가능하다. */
+            display: inline-block; /* 배치 구도는 가로며 Block의 성질을 갖게 한다. */
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="List01">
+        <div>Block</div>
+        <div>Block</div>
+        <div>Block</div>
+    </div>
+
+    <div class="List02">
+        <span>Inline</span>
+        <strong>Inline</strong>
+        <small>Inline</small>
+    </div>
+
+    <div class="box">
+        <input type="text" name="A">
+    </div>
+
+    <div class="List03">
+        <a href="#">Inline Block</a>
+        <a href="#">Inline Block</a>
+        <a href="#">Inline Block</a>
+    </div>
+
+</body>
+</html>

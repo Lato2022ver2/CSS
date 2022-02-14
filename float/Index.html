@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding:0; list-style: none;}
+
+        /* float요소를 쌓을 시 부모 요소가 자식 요소를 감싸지 못하는 문제가 생김
+           1. ??(class):after {content: ""; display: block; clear: both;}의 방식을 이용해서 해결
+           2. 부모 요소에 overflow:hidden을 넣는다. (이게 더 편하니 난 이거로 해결할 것.)
+        */
+        .BoxList01 {overflow: hidden;}
+        .BoxList01 li {float: left;}
+
+        .BoxList02 
+        {
+            border: 1px solid navy;
+            overflow: hidden;
+            /* width: 600px; */
+            width: 50%;
+        }
+        
+        .BoxList02 li
+        {
+            float: left;
+            /* width: 100px; */
+            width: 16.6666%;
+
+            border: 1px solid #777;
+            box-sizing: border-box; /* border의 크기는 제외 후 박스의 크기를 나누는 기능 */
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <ul class="BoxList01">
+        <li>Box</li>
+        <li>Box</li>
+        <li>Box</li>
+        <li>Box</li>
+        <li>Box</li>
+        <li>Box</li>
+    </ul>
+
+    <ul class="BoxList02">
+        <li>Box</li>
+        <li>Box</li>
+        <li>Box</li>
+        <li>Box</li>
+        <li>Box</li>
+        <li>Box</li>
+    </ul>
+
+</body>
+</html>

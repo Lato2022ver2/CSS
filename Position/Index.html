@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{margin: 0; padding: 0;}
+
+        .list 
+        {
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid magenta;
+        }
+
+        p 
+        {
+            border: 1px solid maroon;
+            height: 100px;
+        }
+
+        .inner1 {background-color: yellow;}
+
+        /* position: relative(현 위치에서 Z축 방향으로 올린다), top or buttom 택1, left or rigth 중 택1하여 사용 */
+        .inner2 {background-color: violet; position: relative; top: 10px; left: 10px; width: 100px; height: 100px;}
+
+        .inner3 {background-color: tomato;}
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="list"> 
+        <div class="content">
+            <p class="inner1">포지션</p>
+            <p class="inner2">포지션</p>
+            <p class="inner3">포지션</p>
+        </div>
+    </div>
+
+</body>
+</html>

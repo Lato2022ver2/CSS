@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .list 
+        {
+            overflow: hidden;
+            width: 800px;
+            border: 1px solid aqua;
+        }
+        .list .img-left, .content-right
+        {
+            float: left;
+            width: 50%;
+            /* border: 1px solid aqua; */
+            box-sizing: border-box;
+        }
+
+        .title > p {margin: 0;}
+        .title > .bottom {margin-bottom: 70px;}
+
+        .content2 .price, .content2 .order
+        {
+            overflow: hidden;
+        }
+
+        .content2 .p-left {float: left;}
+        .content2 .p-right {float: right;}
+
+        .order > button {width: 50%;}
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="list">
+
+        <div class="img-left">
+            <img src="img/1.png" alt="img">
+            <p>이딴거가 하나에....</p>
+        </div>
+
+        <div class="content-right">
+
+            <div class="title">
+                <p>제목 : 패딩바텀 800px</p>
+                <p class="bottom">내용 : gg</p>
+            </div>
+
+            <div class="content2">
+
+                <div class="price">
+                    <div class="p-left">가격</div>
+                    <div class="p-right">10000원</div>
+                </div>
+
+                <div class="order">
+                    <button class="p-left">장바구니</button>
+                    <button class="p-right">구매하기</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

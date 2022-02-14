@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap');
+html, body{font-family: 'Syne Tactile', cursive;}
+*{margin: 0; padding: 0;}
+ul, li{list-style: none;}
+a{text-decoration: none;}
+
+/* 전체 너비 960px */
+#main_header 
+{width: 960px; margin: 0 auto; height: 160px; position: relative;}
+
+#main_header .title {position: absolute; left: 10px; top: 30px;}
+#main_header .main_gnb {position: absolute; right: 0; top: 0;}
+#main_header .main_lnb {position: absolute; right: 0; bottom: 10px;}
+
+/* Menu */
+.main_gnb ul {overflow: hidden;}
+.main_gnb ul li {float: left;}
+.main_gnb ul li a 
+{
+    display: inline-block;
+    padding: 3px 5px;
+    border: 1px solid blue;
+}
+.main_gnb ul li a:hover
+{
+    background-color: yellowgreen;
+    color: violet;
+}
+
+/* 요소 중 원하는 위치를 선택해서 표현. */
+.main_lnb ul li:nth-child(1) a {border-radius: 8px 0 0 8px;}
+.main_lnb ul li:nth-child(5) a {border-radius: 0 8px 8px 0;}
+
+
+/* Sub Menu */
+.main_lnb ul {overflow: hidden;}
+.main_lnb ul li {float: left;}
+.main_lnb ul li a 
+{
+    display: inline-block;
+    padding: 6px 10px;
+    border: 1px solid blue;
+}
+.main_lnb ul li a:hover
+{
+    background-color: yellowgreen;
+    color: violet;
+}
+
+/* 요소 중 원하는 위치를 선택해서 표현. */
+.main_lnb ul li:nth-child(1) a {border-radius: 8px 0 0 8px;}
+.main_lnb ul li:nth-child(5) a {border-radius: 0 8px 8px 0;}
+
+/* 본문 */
+#content {width: 960px; margin: 0 auto; overflow: hidden;}
+
+#content .main_section {float: left; width: 750px;}
+
+#content .main_article 
+{
+    border: 1px solid black; box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#content .main_aside {float: right; width: 200px; border: 1px solid black;}
+
+/* Tab 영역 */
+.main_aside .buttons {overflow: hidden;}
+.main_aside .buttons > label
+{
+    float: left;
+    width: 50%;
+    text-align: center;
+    background-color: indigo;
+}
+
+.tap-content ul li a {display: block;}
+.tap-content ul li a span {display: block;}
+.tap-content .side {overflow: hidden;}
+.tap-content ul li a .side
+{float: right; width: 50%; text-align: center; background-color: black;}

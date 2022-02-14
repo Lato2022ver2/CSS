@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{margin: 0; padding: 0; list-style: none;}
+
+        body
+        {
+            height: 1000px; background-color: black;
+        }
+
+        header
+        {
+            position: fixed;
+            left: 0; top: 0;
+            width: 100%;
+            z-index: 20;
+        }
+
+        section {margin-top: 150px;}
+
+        .logo 
+        {
+            text-align: center;
+            background-color: blue;
+        }
+
+        .menu {background-color: aqua; text-align: center;}
+        .menu ul li {display: inline;}
+        .menu ul li a 
+        {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px; /* 수직 정렬 */
+            color: blueviolet;
+            text-decoration: none;
+        }
+       .menu ul li a:hover {background-color: navy;}
+
+       .side 
+       {
+           position: fixed;
+           right: 0; top: 0;
+           z-index: 10; /* 포지션 간의 우선순위 결정 */
+           top: 300px;
+           background-color: yellowgreen;
+           width: 100px;
+           text-align: center;
+        }
+
+        .side .side-list li {border-bottom: 1px solid violet;}
+
+        .side .side-list li a
+        {
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            display: block;
+            padding: 10px 0;
+            padding: 0px 10px;
+            letter-spacing: -1px; /* 글자간 간격 조절 */
+        }
+
+        .side .side-list li a span {display: block;}
+
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        
+        <div class="logo">
+            <img src="img/1.png" alt="img">
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="">메뉴</a>
+                    <a href="">메뉴</a>
+                    <a href="">메뉴</a>
+                    <a href="">메뉴</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- 사이드 메뉴 -->
+    <aside class="side">
+        <ul class="side-list">
+            <li>
+                <a href="#">
+                    <span>카톡</span>
+                    <span>aaa123</span>
+                </a>
+            </li>
+            <li><a href="#">전화번호</a></li>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+        </ul>
+    </aside>
+
+
+    <section>
+        아 속쓰려 씨바
+    </section>
+
+</body>
+</html>

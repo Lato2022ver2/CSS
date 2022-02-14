@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin: 0; list-style: none;}
+
+        .wrap
+        {
+            width: 500px;
+            margin: 0 auto;
+            border: 1px solid rgb(243, 7, 7);
+            position: relative;
+            padding: 10px;
+            box-sizing: border-box; /* padding과 border가 size에 포함되어 500(가로)이 맞춰진다. */
+        }
+
+        .wrap {position: relative;}
+        .img 
+        {
+            position: absolute;
+            left: 10;
+            top: 10;
+        }
+        .img img {width: 50px;}
+
+        .content, .control
+        {
+            padding-left: 70px;
+        }
+
+        .content textarea
+        {
+            width: 100%;
+            box-sizing: border-box;
+            resize: none; /* textarea의 크기를 화면에서 마우스로 조절하지 못하게 고정하는 기능 */
+            padding: 10px;
+        }
+
+        .control {overflow: hidden;}
+        .input {float: left;}
+        .control button {float: right;}
+
+        .input input 
+        {
+            display: block;
+            width: 150px;
+            margin-bottom: 5px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrap">
+
+        <div class="img">
+            <img src="img/1.png" alt="img">
+        </div>
+
+        <div class="content">
+            <textarea rows="10" placeholder="댓글등록"></textarea>
+        </div>
+
+        <div class="control">
+
+            <div class="input">
+                <input type="text">
+                <input type="text">
+            </div>
+
+            <button type="button">등록하기</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
