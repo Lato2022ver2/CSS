@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <!-- Boot Strap 적용 방법 (min or 일반 파일 중 택1) -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="js/bootstrap.js"></script>
+
+    <style>
+        .my-grid {
+            margin: 0 auto;
+            float: none; /* float이 적용되어 있어 해당 부분이 margin이 적용되지 않아 float기능을 이 부분에서만 끈 것 */
+        }
+
+        .container .row .form-group {
+            margin-top: 10px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12 col-md-9 col-lg-6 my-grid" style="border: 1px solid red;">
+
+                <h3>Boot Strap Class 활용</h3>
+
+                <div class="form-group"></div>
+                    <label>아이디</label>
+                    <input type="text" class="form-control">
+
+                    <div class="form-group">
+                        <label>비밀번호</label>
+                        <input type="password" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>검색창</label>
+    
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-btn">
+                              <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                              </button>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <button type="button" class="btn btn-primary btn-block">완료</button>
+
+            </div>
+
+        </div>
+
+    </div>    
+
+</body>
+</html>

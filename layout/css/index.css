@@ -75,8 +75,34 @@ a{text-decoration: none;}
     background-color: indigo;
 }
 
-.tap-content ul li a {display: block;}
-.tap-content ul li a span {display: block;}
-.tap-content .side {overflow: hidden;}
-.tap-content ul li a .side
-{float: right; width: 50%; text-align: center; background-color: black;}
+.tab-content ul li a 
+{
+    display: block; position: relative; padding: 10px; 
+    border-top: 1px solid #333;
+}
+
+.tab-content ul li:nth-child(1) a {border-top: none;}
+.tab-content ul li a span {display: block;}
+
+.tab-content ul li a .thumbs {position: absolute; top: 10px; left: 10px;}
+
+.tab-content ul li a .content {padding-left: 55px;}
+.tab-content ul li a .content > strong,
+.tab-content ul li a .content > p {font-size: 15px;}
+
+.tab-content ul li a .content > strong /* 넘어가는 내용에 대해서 ...식으로 생략 처리 */
+{
+    display: block;
+    white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+    font-size: 15px; width: 125px; 
+}
+
+footer 
+{
+    border: 1px solid #333;
+    box-sizing: border-box;
+    width: 960px; 
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
